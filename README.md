@@ -1,4 +1,4 @@
-# Exercice 1 – SQL (~30min)
+# Exercice 1 – SQL (20min)
 ### La base de données d’un site de e-commerce est modélisée de la manière suivante :
 
 
@@ -50,7 +50,7 @@ Le cycle de vie des paniers pour chaque utilisateur est le suivant : lors de la 
 >> SELECT a.ID_PANIER, COUNT(ID_ARTICLE) as NOMBRE_ARTICLES FROM PANIERS p, LEFT JOIN ARTICLES a ON (a.ID_PANIER = p.ID_PANIER)
 >> AND DATE_FORMAT(p.DATE_CREATION, "%Y" )= '2018'  GROUP BY a.ID_PANIER 
 
-# Exercice 2 – Java (~15min)
+# Exercice 2 – Java (12min)
 ### Identifier un maximum de problèmes dans le fichier TransfertBancaire.java : syntaxe, conventions, mauvaises pratiques, dysfonctionnements, etc.
 #### Réponses:
 
@@ -90,7 +90,7 @@ Le cycle de vie des paniers pour chaque utilisateur est le suivant : lors de la 
 
 
 
-# Exercice 3 – Angular & Spring Boot (~1h15)
+# Exercice 3 – Angular & Spring Boot (1h30)
 
 >L’objectif de cet exercice est de créer une calculette avec un frontend Angular et un backend Spring Boot :\
 Le frontend contiendra une interface web représentant une calculette et permettant à l’utilisateur d’exécuter des opérations mathématiques de base (+,-,×,÷) et de les chainer (exemple : 32-10+48).\
