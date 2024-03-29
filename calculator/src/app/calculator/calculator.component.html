@@ -1,0 +1,29 @@
+<h3>Calcutator</h3>
+
+
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <label for="leftOp">
+    Left Nmuber 
+    </label>
+    <input id="leftOp" type="text" formControlName="leftOp">
+  </div>
+
+  <div>
+    <label for="leftOp">
+    Right Number
+    </label>
+    <input id="rightOp" type="text" formControlName="rightOp">
+  </div>
+
+  <button class="button" type="submit" (click)="calculate('addition')" >Addition(+)</button>
+  <button class="button" type="submit" (click)="calculate('substraction')" >Substraction(-)</button>
+  <button class="button" type="submit" (click)="calculate('multiplication')" >Multiplication(*)</button>
+  <button class="button" type="submit" (click)="calculate('division')" >Division(/)</button>
+
+</form>
+<div *ngIf="result">
+    <span>{{ result }} </span>
+  </div>
